@@ -51,7 +51,7 @@ exports.createItem = (req, res, body) => {
 
   items.push(newItem);
   writeItems(items);
-
+  
   res.writeHead(201, { "Content-Type": "application/json" });
   res.end(JSON.stringify({ success: true, data: newItem }));
 };

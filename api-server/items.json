@@ -1,14 +1,20 @@
 [
-    {
-        "Name": "Mango",
-        "Price": "5000",
-        "Size": "small" ,
-        "Id": "1"
-    },
-    {
-        "Name": "Orange",
-        "Price": "2000",
-        "Size": "large" ,
-        "Id": "2"
-    }
+  {
+    "id": "05f38232-e3d4-4bce-8eca-42932f7a3531",
+    "name": "Banana",
+    "price": "1000",
+    "size": "medium"
+  },
+  {
+    "id": "29feb298-c45d-454c-8a20-15b6f4cad620",
+    "name": "Orange",
+    "price": "2000",
+    "size": "small"
+  },
+  {
+    "id": "7f27e1e2-c5e7-4499-9bd4-e7cada87e34c",
+    "name": "Mango",
+    "price": "3000",
+    "size": "large"
+  }
 ]

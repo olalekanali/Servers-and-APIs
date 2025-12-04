@@ -6,7 +6,9 @@ const HOST = 'localhost';
 
 const server = http.createServer((req, res) => {
   // GET all
-  if (req.url === "/items" && req.method === "GET") return getAllItems(req, res);
+  if (req.url === "/items" && req.method === "GET") {
+    return getAllItems(req, res);
+  }
 
   // GET one
   if (req.url.startsWith("/items/") && req.method === "GET") {
@@ -42,5 +44,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`Server running at https://${HOST}:${PORT}`);
+  console.log(`Server running at http://${HOST}:${PORT}`);
 });
