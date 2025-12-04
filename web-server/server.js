@@ -1,4 +1,4 @@
-const https = require('https');
+const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
@@ -7,9 +7,9 @@ const HOST = 'localhost';
 
 const filePath = path.join(__dirname, "index.html")
 
-const server = https.createServer((req, res) => {
+
+const server = http.createServer((req, res) => {
     requestHandler(req, res);
-    
 });
 
 function requestHandler(req, res) {
@@ -20,7 +20,6 @@ function requestHandler(req, res) {
                 res.end('Internal Server Error');
                 return;
             }
-            console.log(data)
             res.writeHead(200, { 'Content-Type': 'text/html' });
             res.end(data);
         });
@@ -35,7 +34,6 @@ function requestHandler(req, res) {
 
 
 server.listen(PORT, HOST, () => {
-  console.log(`HTTPS Server running at https://${HOST}:${PORT}`);
-  console.log("filepath: " + filePath)
+  console.log(`Server running at http://${HOST}:${PORT}`);
 });
 
