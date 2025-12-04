@@ -1,0 +1,14 @@
+[
+    {
+        "Name": "Mango",
+        "Price": "5000",
+        "Size": "small" ,
+        "Id": "1"
+    },
+    {
+        "Name": "Orange",
+        "Price": "2000",
+        "Size": "large" ,
+        "Id": "2"
+    }
+]
